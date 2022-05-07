@@ -1,0 +1,67 @@
+<!--This is a web page with a simple "Create Account" form that could be used for websites that require accounts.-->
+<!DOCTYPE html>
+<html>
+
+    <!--Creates the title for the web page, visible on the tab at the top of the web page.-->
+    <head>
+        <title>Create Account</title>
+    </head>
+
+    <!--Creates the body of the web page, contains the create account form.-->
+    <body>
+
+        <!--Creates a header for the form.-->
+        <h1>Create Account</h1>
+
+        <!--Creates the form.-->
+        <form action = "createAccount.php" method = "POST">
+
+            <!--Creates the input field for first name on the form.-->
+            <div>
+                <label for = "firstName">First Name:</label>
+                <input type = "text" name = "firstName" required>
+            </div>
+
+            <br>
+
+            <!--Creates the input field for last name on the form.-->
+            <div>
+                <label for = "lastName">Last Name:</label>
+                <input type = "text" name = "lastName" required>
+            </div>
+
+            <br>
+
+            <!--Creates the input field for birthday on the form.-->
+            <div>
+                <label for = "birthday">Birthday:</label>
+                <input type = "date" name = "birthday" required>
+            </div>
+
+            <br>
+
+            <!--Creates the input field for email address on the form.-->
+            <div>
+                <label for = "email">Email:</label>
+                <input type = "text" name = "email" required>
+            </div>
+
+            <br>
+
+            <!--Creates the input field for phone number on the form.-->
+            <div>
+                <label for = "phone">Phone Number:</label>
+                <input type = "number" name = "phone" required>
+            </div>
+
+            <br>
+
+            <!--Creates buttons on the form, one is to submit the form and the other is to reset input fields.-->
+            <button type = "submit">Create Account</button>
+            <button type = "reset">Clear</button>
+
+        </form>
+
+    </body>
+    
+</html>
